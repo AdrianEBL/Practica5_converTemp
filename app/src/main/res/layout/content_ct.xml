@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.hint.txtgrad"
+        android:textSize="20dp"
+        android:id="@+id/txtgrade"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/main.hint.inputgrad"
+        android:ems="15"
+        android:id="@+id/inputgr"
+        android:layout_below="@+id/txtgrade"
+        android:layout_alignLeft="@+id/txtgrade"
+        android:layout_alignStart="@+id/txtgrade"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.button.btncon"
+        android:id="@+id/btnConvertion"
+        android:layout_below="@+id/inputgr"
+        android:layout_alignLeft="@+id/inputgr"
+        android:layout_alignStart="@+id/inputgr"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_below="@+id/btnConvertion"
+        android:layout_alignStart="@+id/btnConvertion"
+        android:layout_alignLeft="@+id/txtgrade"
+        android:layout_alignRight="@id/txtgrade"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputF"
+        android:layout_below="@+id/separator"
+        android:layout_alignParentLeft="@+id/btnConvertion"
+        android:layout_alignParentStart="@+id/btnConvertion"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputK"
+        android:layout_below="@+id/inputF"
+        android:layout_alignParentLeft="@+id/inputF"
+        android:layout_alignParentStart="@+id/inputF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputR"
+        android:layout_below="@+id/inputK"
+        android:layout_alignParentLeft="@+id/inputK"
+        android:layout_alignParentStart="@+id/inputK"/>
+
+</RelativeLayout>
